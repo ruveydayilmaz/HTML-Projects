@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html crash course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Search now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+
+            <h1><span>The Healthy</span> Eating Experience</h1>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Nam sed libero quis arcu accumsan viverra a ac enim. Sed libero magna, pretium fermentum ullam</p>
+        
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "San Diego"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem atque quibusdam placeat, incidunt similique eos facere exercitationem! Deserunt, odit velit.</p>
+        </div>
+        <img src="images/food.jpg" alt="food">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+        })
+    </script>
+</body>
+</html>
